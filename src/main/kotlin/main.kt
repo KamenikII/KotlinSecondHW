@@ -23,7 +23,7 @@ fun main() {
     println("Задание 2")
     println("Введите число лайков: ")
     val likes = Integer.valueOf(readLine()) //количество лайков
-    if (((likes > 11) && (likes % 10 == 1)) || (likes == 1)) println("Понравилось $likes человеку") else println("Понравилось $likes людям")
+    if (((likes % 100 != 11) && (likes % 10 == 1)) || (likes == 1)) println("Понравилось $likes человеку") else println("Понравилось $likes людям")
     println()
 
 
